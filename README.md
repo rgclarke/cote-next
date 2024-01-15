@@ -66,7 +66,6 @@ Features include:
   - Streaming
   - Static Pre-Rendering
 
-
 # Quickstart
 
 ### Setting up the environment variables
@@ -96,7 +95,7 @@ yarn dev
 
 ### Open the code and start customizing
 
-Your site is now running at http://localhost:8000!
+Your site is now running at http://localhost:5173!
 
 # Payment integrations
 
