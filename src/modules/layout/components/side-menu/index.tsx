@@ -38,7 +38,7 @@ const SideMenu = ({
             <>
               <div className="relative flex h-full">
                 <Popover.Button className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-chablis">
-                  <MenuIcon />
+                  <MenuIcon size="24" />
                 </Popover.Button>
               </div>
 
@@ -63,7 +63,7 @@ const SideMenu = ({
                           onClick={close}
                           className="hover:text-neutral-800"
                         >
-                          <XMark />
+                          <XMark size="24" />
                         </button>
                       </div>
                       <div className="basis-1/2 inline-block pt-1 mx-auto sm:hidden justify-center items-center h-full">

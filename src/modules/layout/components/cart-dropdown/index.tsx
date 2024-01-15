@@ -73,10 +73,10 @@ const CartDropdown = ({
   return (
     <div className="h-full" onMouseEnter={openAndCancel} onMouseLeave={close}>
       <Popover className="relative h-full">
-        <Popover.Button className="h-full">
+        <Popover.Button className="h-full mt-[5px]">
           <Link className="relative hover:text-chablis" href="/cart">
             <CartIcon />
-            <div className="absolute top-[4px] left-[4px] w-4 h-4 grid justify-items-center content-center font-semibold">
+            <div className="absolute top-[4px] left-[4px] w-4 h-4 grid justify-items-center content-center font-semibold bg-neutral-200 rounded-full">
               {`${totalItems}`}
             </div>
           </Link>
@@ -93,7 +93,7 @@ const CartDropdown = ({
         >
           <Popover.Panel
             static
-            className="hidden small:block absolute top-[calc(100%+8px)] right-0 bg-white border-x border-b border-neutral-200 w-[420px] text-ui-fg-base"
+            className="hidden small:block absolute top-[calc(100%+24px)] right-0 bg-white border-x border-b border-neutral-200 w-[420px] text-ui-fg-base"
           >
             <div className="p-4 flex items-center justify-center">
               <h3 className="text-large-semi">My Cart</h3>
@@ -150,7 +150,9 @@ const CartDropdown = ({
                   <div className="flex items-center justify-between">
                     <span className="text-ui-fg-base font-semibold">
                       Subtotal{" "}
-                      <span className="font-normal">(excl. taxes)</span>
+                      <span className="font-normal">
+                        (before Taxes & Shipping)
+                      </span>
                     </span>
                     <span className="text-large-semi">
                       {formatAmount({

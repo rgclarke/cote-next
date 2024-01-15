@@ -6,7 +6,9 @@ import { Suspense } from "react"
 import { listRegions } from "@lib/data"
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
+import AccountIcon from "@modules/common/icons/account-circle"
 import CartIcon from "@modules/common/icons/cart"
+import SearchIcon from "@modules/common/icons/magnify"
 
 export default async function Nav() {
   const regions = await listRegions().then((regions) => regions)
@@ -36,31 +38,38 @@ export default async function Nav() {
               />
             </Link>
           </div>
-
-          <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
-            <div className="hidden small:flex items-center gap-x-6 h-full">
-              {process.env.FEATURE_SEARCH_ENABLED && (
-                <Link
-                  className="hover:text-ui-fg-base"
-                  href="/search"
-                  scroll={false}
+          {/* Link Bar */}
+          <div className="flex items-center h-full flex-1 basis-0 justify-end">
+            <div className="flex items-center sm:gap-x-6 rounded-full pl-2 sm:pl-3 pr-3 sm:pr-4 py-0.5 hover:bg-white/50 justify-end">
+              <div className="flex items-center gap-x-6 h-full">
+                {process.env.FEATURE_SEARCH_ENABLED && (
+                  <Link
+                    className="hidden sm:inline-block hover:text-chablis"
+                    href="/search"
+                    scroll={false}
+                  >
+                    <span className="sr-only">search</span>
+                    <SearchIcon />
+                  </Link>
+                )}
+                {/* Account */}
+                <Link className="hover:text-chablis" href="/account">
+                  <span className="sr-only">account</span>
+                  <AccountIcon />
+                </Link>
+                <Suspense
+                  fallback={
+                    // Cart
+                    <Link className="flex" href="/cart">
+                      <span className="sr-only">cart</span>
+                      <CartIcon />
+                    </Link>
+                  }
                 >
-                  Search
-                </Link>
-              )}
-              <Link className="hover:text-ui-fg-base" href="/account">
-                Account
-              </Link>
+                  <CartButton />
+                </Suspense>
+              </div>
             </div>
-            <Suspense
-              fallback={
-                <Link className="text-neutral-300 flex gap-2" href="/cart">
-                  <CartIcon />
-                </Link>
-              }
-            >
-              <CartButton />
-            </Suspense>
           </div>
         </nav>
       </header>
