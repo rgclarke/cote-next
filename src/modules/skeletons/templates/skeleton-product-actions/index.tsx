@@ -21,7 +21,7 @@ const SkeletonProductActions = ({ product }: { product: PricedProduct }) => (
         )}
       </div>
 
-      <div className="block w-36 h-9 bg-gray-100 animate-pulse" />
+      <div className="block w-36 h-9 bg-neutral-100 animate-pulse" />
 
       <Button disabled variant="primary" className="w-full h-10">
         Select variant

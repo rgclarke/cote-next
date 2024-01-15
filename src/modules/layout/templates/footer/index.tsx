@@ -1,9 +1,10 @@
+import Image from "next/image"
 import { Text, clx } from "@medusajs/ui"
 import Link from "next/link"
 
 import { getCategoriesList, getCollectionsList } from "@lib/data"
 
-import MedusaCTA from "../../components/medusa-cta"
+// import MedusaCTA from "../../components/medusa-cta"
 
 const fetchCollections = async () => {
   const { collections } = await getCollectionsList()
@@ -23,16 +24,27 @@ export default async function Footer() {
     (categories) => categories
   )
   return (
-    <footer className="border-t border-ui-border-base w-full">
+    <footer className="border-t border-ui-border-base w-full bg-neutral-200">
       <div className="content-container flex flex-col w-full">
         <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
           <div>
             <Link
               href="/"
+              className="txt-compact-xlarge-plus hover:text-ui-fg-base"
+            >
+              <Image
+                src="/svg/code-de-chine-wordmark-black.svg"
+                alt="Cote de Chine"
+                width={120}
+                height={20}
+              />
+            </Link>
+            {/* <Link
+              href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
             >
-              Medusa Store
-            </Link>
+              Cote de Chine
+            </Link> */}
           </div>
           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
             {productCategories && productCategories?.length > 0 && (
@@ -114,7 +126,7 @@ export default async function Footer() {
                 </ul>
               </div>
             )}
-            <div className="flex flex-col gap-y-2">
+            {/* <div className="flex flex-col gap-y-2">
               <span className="txt-small-plus txt-ui-fg-base">Medusa</span>
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
@@ -148,14 +160,14 @@ export default async function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
           <Text className="txt-compact-small">
-            © {new Date().getFullYear()} Medusa Store. All rights reserved.
+            ©{new Date().getFullYear()} Trove Limited. Designed in Hong Kong.
           </Text>
-          <MedusaCTA />
+          {/* <MedusaCTA /> */}
         </div>
       </div>
     </footer>

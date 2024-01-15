@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { cookies } from "next/headers"
 import Link from "next/link"
 import { Suspense } from "react"
@@ -5,6 +6,7 @@ import { Suspense } from "react"
 import { listRegions } from "@lib/data"
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
+import CartIcon from "@modules/common/icons/cart"
 
 export default async function Nav() {
   const regions = await listRegions().then((regions) => regions)
@@ -13,20 +15,25 @@ export default async function Nav() {
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <header className="relative h-16 mx-auto border-b duration-200 bg-white border-ui-border-base">
+      <header className="relative h-16 mx-auto duration-200 bg-white/50 border-white/30 backdrop-blur-md">
         <nav className="content-container txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between w-full h-full text-small-regular">
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="h-full">
               <SideMenu regions={regions} currentRegion={currentRegion} />
             </div>
           </div>
-
+          {/* Logo */}
           <div className="flex items-center h-full">
             <Link
               href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
+              className="txt-compact-xlarge-plus hover:text-ui-fg-base"
             >
-              Medusa Store
+              <Image
+                src="/svg/code-de-chine-wordmark-black.svg"
+                alt="Cote de Chine"
+                width={160}
+                height={26}
+              />
             </Link>
           </div>
 
@@ -47,8 +54,8 @@ export default async function Nav() {
             </div>
             <Suspense
               fallback={
-                <Link className="hover:text-ui-fg-base flex gap-2" href="/cart">
-                  Cart (0)
+                <Link className="text-neutral-300 flex gap-2" href="/cart">
+                  <CartIcon />
                 </Link>
               }
             >

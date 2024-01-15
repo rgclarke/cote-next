@@ -20,6 +20,16 @@ module.exports = {
         padding: "padding-top padding-right padding-bottom padding-left",
       },
       colors: {
+        cerulean: "#00B5E2",
+        "cerulean-light": "#00C7F5",
+        "cerulean-medium": "#C2C6C8",
+        "cerulean-dark": "#384B54",
+        chablis: "#72cc5e",
+        chianti: '#D13636',
+				kelin: '#A4CA8F', // #78D64B matched for 7488C, #5ACE5A for 7488U
+        'kelin-light': '#f1f7ed',
+        'kelin-medium': '#C2D6B8',
+        'kelin-dark': '#6e8a62',
         grey: {
           0: "#FFFFFF",
           5: "#F9FAFB",

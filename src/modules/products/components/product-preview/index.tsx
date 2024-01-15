@@ -24,7 +24,7 @@ export default async function ProductPreview({
           <div className="flex items-center gap-x-2">
             <Suspense
               fallback={
-                <div className="w-20 h-6 animate-pulse bg-gray-100"></div>
+                <div className="w-20 h-6 animate-pulse bg-neutral-100"></div>
               }
             >
               <PreviewPrice id={id} price={price} />
