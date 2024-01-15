@@ -40,8 +40,8 @@ export default async function Nav() {
           </div>
           {/* Link Bar */}
           <div className="flex items-center h-full flex-1 basis-0 justify-end">
-            <div className="flex items-center sm:gap-x-6 rounded-full pl-2 sm:pl-3 pr-3 sm:pr-4 py-0.5 hover:bg-white/50 justify-end">
-              <div className="flex items-center gap-x-6 h-full">
+            <div className="flex items-center rounded-full pl-2 sm:pl-3 pr-3 sm:pr-4 py-0.5 hover:bg-white/50 justify-end">
+              <div className="flex items-center gap-x-2 sm:gap-x-6 h-full">
                 {process.env.FEATURE_SEARCH_ENABLED && (
                   <Link
                     className="hidden sm:inline-block hover:text-chablis"
