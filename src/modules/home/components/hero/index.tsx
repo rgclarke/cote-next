@@ -1,3 +1,4 @@
+import SearchIcon from "@modules/common/icons/magnify"
 import BackgroundImage from "@modules/common/components/background-image"
 
 // import { Github } from "@medusajs/icons"
@@ -13,6 +14,18 @@ const Hero = () => {
         />
       </div>
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
+        {/* Search Bar */}
+        <div className="mx-auto grid w-full place-content-center py-4">
+          <div
+            className="w-64 rounded-full border border-neutral-300 bg-white px-4 py-1 text-left text-sm ring-transparent ring-offset-2 hover:border-transparent hover:ring-2 hover:ring-chablis dark:border-neutral-500 dark:bg-neutral-900 dark:hover:border-transparent dark:hover:ring-chablis"
+            aria-label="Search"
+          >
+            <div className="pointer-events-none flex items-center px-1">
+              <SearchIcon />
+              <span className="inline-block pl-1 pt-0.5"> Search ⌘K</span>
+            </div>
+          </div>
+        </div>
         <span>
           <Heading
             level="h1"

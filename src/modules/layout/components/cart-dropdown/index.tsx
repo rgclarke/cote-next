@@ -76,9 +76,15 @@ const CartDropdown = ({
         <Popover.Button className="h-full mt-[5px]">
           <Link className="relative hover:text-chablis" href="/cart">
             <CartIcon />
-            <div className="absolute top-[4px] left-[4px] w-4 h-4 grid justify-items-center content-center font-semibold bg-neutral-200 rounded-full">
+            {/* Display Badge if there are items in the Cart */}
+            {totalItems > 0 && (
+              <div className="absolute top-[4px] left-[4px] w-4 h-4 grid justify-items-center content-center font-semibold bg-neutral-200 rounded-full">
+                {`${totalItems}`}
+              </div>
+            )}
+            {/* <div className="absolute top-[4px] left-[4px] w-4 h-4 grid justify-items-center content-center font-semibold bg-neutral-200 rounded-full">
               {`${totalItems}`}
-            </div>
+            </div> */}
           </Link>
         </Popover.Button>
         <Transition
