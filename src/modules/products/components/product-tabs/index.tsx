@@ -15,7 +15,7 @@ type ProductTabsProps = {
 const ProductTabs = ({ product }: ProductTabsProps) => {
   const tabs = [
     {
-      label: "Product Information",
+      label: "Details",
       component: <ProductInfoTab product={product} />,
     },
     {
@@ -60,7 +60,7 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
             <p>{product.type ? product.type.value : "-"}</p>
           </div>
         </div>
-        <div className="flex flex-col gap-y-4">
+        {/* <div className="flex flex-col gap-y-4">
           <div>
             <span className="font-semibold">Weight</span>
             <p>{product.weight ? `${product.weight} g` : "-"}</p>
@@ -74,7 +74,7 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       {product.tags?.length ? (
         <div>
           <span className="font-semibold">Tags</span>
@@ -93,9 +93,8 @@ const ShippingInfoTab = () => {
           <div>
             <span className="font-semibold">Fast delivery</span>
             <p className="max-w-sm">
-              Standard shipping in Hong Kong within 3 business days. See
-              checkout for express and other options. Or you can pick up your
-              order from our warehouse at any time during business hours.
+              Standard shipping in Hong Kong within 3 business days. See checkout for express and other options. Free delivery with minimum order.
+              Or you can pick up your order from our warehouse at any time during business hours.
             </p>
           </div>
         </div>
@@ -104,8 +103,7 @@ const ShippingInfoTab = () => {
           <div>
             <span className="font-semibold">Exchanges</span>
             <p className="max-w-sm">
-              Unopened merchandise may be returned for a full refund within 7
-              days - excluding Sale or Bin-end items.
+              Unopened merchandise may be returned for a full refund within 7 days &#40;excluding Sale and Bin-end items&#41;.
             </p>
           </div>
         </div>
@@ -114,8 +112,8 @@ const ShippingInfoTab = () => {
           <div>
             <span className="font-semibold">Corked Wine</span>
             <p className="max-w-sm">
-              If your wine is in a cork bottle and has spoiled, just return the
-              bottle with a substantial amount of wine remaining for an exchange
+              If your wine has a cork closure and has spoiled, just return the
+              bottle with a substantial amount of the contents remaining for an exchange
               or refund.
             </p>
           </div>
