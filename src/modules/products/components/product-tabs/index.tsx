@@ -48,7 +48,7 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
       <div className="grid grid-cols-2 gap-x-8">
         <div className="flex flex-col gap-y-4">
           <div>
-            <span className="font-semibold">Material</span>
+            <span className="font-semibold">Grape</span>
             <p>{product.material ? product.material : "-"}</p>
           </div>
           <div>
@@ -93,29 +93,30 @@ const ShippingInfoTab = () => {
           <div>
             <span className="font-semibold">Fast delivery</span>
             <p className="max-w-sm">
-              Your package will arrive in 3-5 business days at your pick up
-              location or in the comfort of your home.
+              Standard shipping in Hong Kong within 3 business days. See
+              checkout for express and other options. Or you can pick up your
+              order from our warehouse at any time during business hours.
             </p>
           </div>
         </div>
         <div className="flex items-start gap-x-2">
           <Refresh />
           <div>
-            <span className="font-semibold">Simple exchanges</span>
+            <span className="font-semibold">Exchanges</span>
             <p className="max-w-sm">
-              Is the fit not quite right? No worries - we&apos;ll exchange your
-              product for a new one.
+              Unopened merchandise may be returned for a full refund within 7
+              days - excluding Sale or Bin-end items.
             </p>
           </div>
         </div>
         <div className="flex items-start gap-x-2">
           <Back />
           <div>
-            <span className="font-semibold">Easy returns</span>
+            <span className="font-semibold">Corked Wine</span>
             <p className="max-w-sm">
-              Just return your product and we&apos;ll refund your money. No
-              questions asked – we&apos;ll do our best to make sure your return
-              is hassle-free.
+              If your wine is in a cork bottle and has spoiled, just return the
+              bottle with a substantial amount of wine remaining for an exchange
+              or refund.
             </p>
           </div>
         </div>
