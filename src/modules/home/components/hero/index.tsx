@@ -43,7 +43,9 @@ const Hero = () => {
           </Heading>
         </span>
         <a href="/store">
-          <Button variant="secondary">Explore our Collection</Button>
+          <button className="mt-4 inline-block mr-4 rounded-full border border-white px-3 py-1.5 text-white text-lg hover:border-chablis dark:hover:border-chablis hover:bg-chablis hover:text-white dark:border-white dark:hover:bg-chablis">
+            Explore our Wines
+          </button>
         </a>
       </div>
     </div>

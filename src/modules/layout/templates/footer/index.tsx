@@ -4,8 +4,6 @@ import Link from "next/link"
 
 import { getCategoriesList, getCollectionsList } from "@lib/data"
 
-// import MedusaCTA from "../../components/medusa-cta"
-
 const fetchCollections = async () => {
   const { collections } = await getCollectionsList()
   return collections
@@ -102,9 +100,7 @@ export default async function Footer() {
             )}
             {productCollections && productCollections.length > 0 && (
               <div className="flex flex-col gap-y-2">
-                <span className="txt-small-plus txt-ui-fg-base">
-                  Collections
-                </span>
+                <span className="txt-small-plus txt-ui-fg-base">Regions</span>
                 <ul
                   className={clx(
                     "grid grid-cols-1 gap-2 text-ui-fg-subtle txt-small",
@@ -126,48 +122,12 @@ export default async function Footer() {
                 </ul>
               </div>
             )}
-            {/* <div className="flex flex-col gap-y-2">
-              <span className="txt-small-plus txt-ui-fg-base">Medusa</span>
-              <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
-                <li>
-                  <a
-                    href="https://github.com/medusajs"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                    GitHub
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://docs.medusajs.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                    Documentation
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                    Source code
-                  </a>
-                </li>
-              </ul>
-            </div> */}
           </div>
         </div>
         <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
           <Text className="txt-compact-small">
             ©{new Date().getFullYear()} Trove Limited. Designed in Hong Kong.
           </Text>
-          {/* <MedusaCTA /> */}
         </div>
       </div>
     </footer>
