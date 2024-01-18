@@ -6,14 +6,16 @@ import NextJs from "../../../common/icons/nextjs"
 const MedusaCTA = () => {
   return (
     <Text className="flex gap-x-2 txt-compact-small-plus items-center">
-      Powered by
-      <a href="https://www.medusajs.com" target="_blank" rel="noreferrer">
-        <Medusa fill="#9ca3af" className="fill-[#9ca3af]" />
+      Côte de Chine is a service of
+      <a
+        href="https://trove.hk"
+        className="hover:text-chablis"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Trove Limited.
       </a>
-      &
-      <a href="https://nextjs.org" target="_blank" rel="noreferrer">
-        <NextJs fill="#9ca3af" />
-      </a>
+      Developed in Hong Kong.
     </Text>
   )
 }
