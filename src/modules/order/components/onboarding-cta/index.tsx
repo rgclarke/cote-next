@@ -5,7 +5,7 @@ import { resetOnboardingState } from "app/actions"
 
 const OnboardingCta = ({ orderId }: { orderId: string }) => {
   return (
-    <Container className="max-w-4xl h-full bg-ui-bg-subtle w-full">
+    <Container className="max-w-4xl h-full bg-white w-full">
       <div className="flex flex-col gap-y-4 center p-4 md:items-center">
         <Text className="text-chablis text-xl">
           Your test order was successfully created! 🎉

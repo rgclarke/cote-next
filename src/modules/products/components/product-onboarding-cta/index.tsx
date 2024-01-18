@@ -9,7 +9,7 @@ const ProductOnboardingCta = () => {
   }
 
   return (
-    <Container className="max-w-4xl h-full bg-ui-bg-subtle w-full p-8">
+    <Container className="max-w-4xl h-full bg-white w-full p-8">
       <div className="flex flex-col gap-y-4 center">
         <Text className="text-chablis text-xl">
           Your demo product was successfully created! 🎉
