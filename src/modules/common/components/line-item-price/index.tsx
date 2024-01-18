@@ -21,15 +21,15 @@ const LineItemPrice = ({
   const hasReducedPrice = (item.total || 0) < originalPrice
 
   return (
-    <div className="flex flex-col gap-x-2 text-ui-fg-subtle items-end">
+    <div className="flex flex-col gap-x-2 text-neutral-800 items-end">
       <div className="text-left">
         {hasReducedPrice && (
           <>
             <p>
               {style === "default" && (
-                <span className="text-ui-fg-subtle">Original: </span>
+                <span className="text-neutral-800">Original: </span>
               )}
-              <span className="line-through text-ui-fg-muted">
+              <span className="line-through text-neutral-800">
                 {formatAmount({
                   amount: originalPrice,
                   region: region,

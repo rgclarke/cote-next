@@ -29,7 +29,7 @@ const AccountNav = ({
         {route !== "/account" ? (
           <Link
             href="/account"
-            className="flex items-center gap-x-2 text-small-regular py-2"
+            className="flex items-center gap-x-2 text-chablis py-2"
           >
             <>
               <ChevronDown className="transform rotate-90" />
@@ -152,8 +152,8 @@ const AccountNavLink = ({ href, route, children }: AccountNavLinkProps) => {
   return (
     <Link
       href={href}
-      className={clx("text-ui-fg-subtle hover:text-ui-fg-base", {
-        "text-ui-fg-base font-semibold": active,
+      className={clx("text-neutral-800 hover:text-chablis", {
+        "text-chablis font-semibold": active,
       })}
     >
       <>{children}</>

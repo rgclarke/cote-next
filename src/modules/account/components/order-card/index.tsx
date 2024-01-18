@@ -24,7 +24,7 @@ const OrderCard = ({ order }: OrderCardProps) => {
   return (
     <div className="bg-white flex flex-col">
       <div className="uppercase text-large-semi mb-1">#{order.display_id}</div>
-      <div className="flex items-center divide-x divide-neutral-200 text-small-regular text-ui-fg-base">
+      <div className="flex items-center divide-x divide-neutral-200 text-chablis text-chablis">
         <span className="pr-2">
           {new Date(order.created_at).toDateString()}
         </span>
@@ -44,8 +44,8 @@ const OrderCard = ({ order }: OrderCardProps) => {
           return (
             <div key={i.id} className="flex flex-col gap-y-2">
               <Thumbnail thumbnail={i.thumbnail} images={[]} size="full" />
-              <div className="flex items-center text-small-regular text-ui-fg-base">
-                <span className="text-ui-fg-base font-semibold">{i.title}</span>
+              <div className="flex items-center text-chablis text-chablis">
+                <span className="text-chablis font-semibold">{i.title}</span>
                 <span className="ml-2">x</span>
                 <span>{i.quantity}</span>
               </div>
@@ -54,10 +54,10 @@ const OrderCard = ({ order }: OrderCardProps) => {
         })}
         {numberOfProducts > 4 && (
           <div className="w-full h-full flex flex-col items-center justify-center">
-            <span className="text-small-regular text-ui-fg-base">
+            <span className="text-chablis text-chablis">
               + {numberOfLines - 4}
             </span>
-            <span className="text-small-regular text-ui-fg-base">more</span>
+            <span className="text-chablis text-chablis">more</span>
           </div>
         )}
       </div>

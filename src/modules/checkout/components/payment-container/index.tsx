@@ -30,7 +30,7 @@ const PaymentContainer: React.FC<PaymentContainerProps> = ({
         value={paymentSession.provider_id}
         disabled={disabled}
         className={clx(
-          "flex flex-col gap-y-2 text-small-regular cursor-pointer py-4 border rounded-rounded px-8 mb-2 hover:shadow-borders-interactive-with-active",
+          "flex flex-col gap-y-2 text-neutral-800 cursor-pointer py-4 border rounded-rounded px-8 mb-2 hover:shadow-borders-interactive-with-active",
           {
             "border-ui-border-interactive":
               selectedPaymentOptionId === paymentSession.provider_id,
@@ -60,7 +60,7 @@ const PaymentContainer: React.FC<PaymentContainerProps> = ({
               <PaymentTest className="hidden small:block" />
             )}
           </div>
-          <span className="justify-self-end text-ui-fg-base">
+          <span className="justify-self-end text-neutral-800">
             {paymentInfoMap[paymentSession.provider_id]?.icon}
           </span>
         </div>

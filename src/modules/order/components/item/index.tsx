@@ -21,14 +21,14 @@ const Item = ({ item, region }: ItemProps) => {
       </Table.Cell>
 
       <Table.Cell className="text-left">
-        <Text className="txt-medium-plus text-ui-fg-base">{item.title}</Text>
+        <Text className="txt-medium-plus text-chablis">{item.title}</Text>
         <LineItemOptions variant={item.variant} />
       </Table.Cell>
 
       <Table.Cell className="!pr-0">
         <span className="!pr-0 flex flex-col items-end h-full justify-center">
           <span className="flex gap-x-1 ">
-            <Text className="text-ui-fg-muted">{item.quantity}x </Text>
+            <Text className="text-neutral-800">{item.quantity}x </Text>
             <LineItemUnitPrice item={item} region={region} style="tight" />
           </span>
 

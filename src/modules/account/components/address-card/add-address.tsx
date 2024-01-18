@@ -115,7 +115,7 @@ const AddAddress = ({ region }: { region: Region }) => {
               <Input label="Phone" name="phone" autoComplete="phone" />
             </div>
             {formState.error && (
-              <div className="text-rose-500 text-small-regular py-2">
+              <div className="text-rose-500 text-chablis py-2">
                 {formState.error}
               </div>
             )}

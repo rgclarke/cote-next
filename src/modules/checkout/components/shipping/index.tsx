@@ -86,7 +86,7 @@ const Shipping: React.FC<ShippingProps> = ({
             <Text>
               <button
                 onClick={handleEdit}
-                className="text-ui-fg-interactive hover:text-ui-fg-interactive-hover"
+                className="text-cyan-600 hover:text-ui-fg-interactive-hover"
               >
                 Edit
               </button>
@@ -107,7 +107,7 @@ const Shipping: React.FC<ShippingProps> = ({
                       key={option.id}
                       value={option.id}
                       className={clx(
-                        "flex items-center justify-between text-small-regular cursor-pointer py-4 border rounded-rounded px-8 mb-2 hover:shadow-borders-interactive-with-active",
+                        "flex items-center justify-between text-neutral-800 cursor-pointer py-4 border rounded-rounded px-8 mb-2 hover:shadow-borders-interactive-with-active",
                         {
                           "border-ui-border-interactive":
                             option.id ===
@@ -124,7 +124,7 @@ const Shipping: React.FC<ShippingProps> = ({
                         />
                         <span className="text-base-regular">{option.name}</span>
                       </div>
-                      <span className="justify-self-end text-ui-fg-base">
+                      <span className="justify-self-end text-neutral-800">
                         {formatAmount({
                           amount: option.amount!,
                           region: cart?.region,
@@ -135,7 +135,7 @@ const Shipping: React.FC<ShippingProps> = ({
                   )
                 })
               ) : (
-                <div className="flex flex-col items-center justify-center px-4 py-8 text-ui-fg-base">
+                <div className="flex flex-col items-center justify-center px-4 py-8 text-neutral-800">
                   <Spinner />
                 </div>
               )}
@@ -156,13 +156,13 @@ const Shipping: React.FC<ShippingProps> = ({
         </div>
       ) : (
         <div>
-          <div className="text-small-regular">
+          <div className="text-neutral-800">
             {cart && cart.shipping_methods.length > 0 && (
               <div className="flex flex-col w-1/3">
-                <Text className="txt-medium-plus text-ui-fg-base mb-1">
+                <Text className="txt-medium-plus text-neutral-800 mb-1">
                   Method
                 </Text>
-                <Text className="txt-medium text-ui-fg-subtle">
+                <Text className="txt-medium text-neutral-800">
                   {cart.shipping_methods[0].shipping_option.name} (
                   {formatAmount({
                     amount: cart.shipping_methods[0].price,

@@ -20,7 +20,7 @@ export default async function ProductPreview({
       <div>
         <Thumbnail thumbnail={thumbnail} size="full" isFeatured={isFeatured} />
         <div className="flex txt-compact-medium mt-4 justify-between">
-          <Text className="text-ui-fg-subtle">{title}</Text>
+          <Text className="text-neutral-800">{title}</Text>
           <div className="flex items-center gap-x-2">
             <Suspense
               fallback={

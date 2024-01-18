@@ -4,7 +4,7 @@ const ErrorMessage = ({ error }: { error?: string | null }) => {
   }
 
   return (
-    <div className="pt-2 text-rose-500 text-small-regular">
+    <div className="pt-2 text-rose-500 text-chablis">
       <span>{error}</span>
     </div>
   )

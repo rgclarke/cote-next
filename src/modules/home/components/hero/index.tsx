@@ -54,13 +54,13 @@ const Hero = () => {
     //     <span>
     //       <Heading
     //         level="h1"
-    //         className="text-3xl leading-10 text-ui-fg-base font-normal"
+    //         className="text-3xl leading-10 text-chablis font-normal"
     //       >
     //         Cote de Chine
     //       </Heading>
     //       <Heading
     //         level="h2"
-    //         className="text-3xl leading-10 text-ui-fg-subtle font-normal"
+    //         className="text-3xl leading-10 text-neutral-800 font-normal"
     //       >
     //         Fine Wines in Hong Kong
     //       </Heading>

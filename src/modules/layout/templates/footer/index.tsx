@@ -26,10 +26,7 @@ export default async function Footer() {
       <div className="content-container flex flex-col w-full">
         <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-24">
           <div className="mb-12 sm:mb-0">
-            <Link
-              href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base"
-            >
+            <Link href="/" className="">
               <Image
                 src="/svg/code-de-chine-wordmark-black.svg"
                 alt="Cote de Chine"
@@ -39,32 +36,38 @@ export default async function Footer() {
             </Link>
             {/* <Link
               href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
+              className="txt-compact-xlarge-plus text-neutral-800 hover:text-chablis hover:text-base uppercase"
             >
               Cote de Chine
             </Link> */}
-            <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
+            <div className="text-neutral-500 gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
               <div className="flex flex-col gap-y-2">
-                <span className="mt-2 mb-6 txt-small-plus txt-ui-fg-base">
+                <span className="mt-2 mb-6 text-sm text-neutral-500">
                   Fine European & New World Wines
                 </span>
-                <ul className="grid grid-cols-1 gap-2 text-ui-fg-subtle txt-small hover:text-ui-fg-base">
-                  <li>About Côte</li>
-                  <li>Contact Us</li>
-                  <li>Delivery & Pick-up</li>
-                  <li>Legal</li>
-                  <li>Privacy Policy</li>
-                  {/* <li>FAQ</li> */}
+                <ul className="grid grid-cols-1 gap-2 text-neutral-800 ">
+                  <li className="hover:text-chablis hover:text-base">
+                    About Côte
+                  </li>
+                  <li className="hover:text-chablis hover:text-base">
+                    Contact Us
+                  </li>
+                  <li className="hover:text-chablis hover:text-base">
+                    Delivery & Pick-up
+                  </li>
+                  <li className="hover:text-chablis hover:text-base">Legal</li>
+                  <li className="hover:text-chablis hover:text-base">
+                    Privacy Policy
+                  </li>
+                  {/* <li className="hover:text-chablis hover:text-base">FAQ</li> */}
                 </ul>
               </div>
             </div>
           </div>
-          <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
+          <div className="text-neutral-800 gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
             {productCategories && productCategories?.length > 0 && (
               <div className="flex flex-col gap-y-2">
-                <span className="txt-small-plus txt-ui-fg-base">
-                  Categories
-                </span>
+                <span className="font-semibold">Categories</span>
                 <ul className="grid grid-cols-1 gap-2">
                   {productCategories?.slice(0, 6).map((c) => {
                     if (c.parent_category) {
@@ -80,11 +83,11 @@ export default async function Footer() {
 
                     return (
                       <li
-                        className="flex flex-col gap-2 text-ui-fg-subtle txt-small"
+                        className="flex flex-col gap-2 text-neutral-800 hover:text-chablis hover:text-base"
                         key={c.id}
                       >
                         <Link
-                          className={clx(" ", children && "txt-small-plus")}
+                          className={clx(" ", children && "")}
                           href={`/categories/${c.handle}`}
                         >
                           {c.name}
@@ -95,7 +98,7 @@ export default async function Footer() {
                               children.map((child) => (
                                 <li key={child.id}>
                                   <Link
-                                    className="hover:text-ui-fg-base"
+                                    className="hover:text-chablis hover:text-base"
                                     href={`/categories/${child.handle}`}
                                   >
                                     {child.name}
@@ -112,19 +115,16 @@ export default async function Footer() {
             )}
             {productCollections && productCollections.length > 0 && (
               <div className="flex flex-col gap-y-2">
-                <span className="txt-small-plus txt-ui-fg-base">Regions</span>
+                <span className="font-semibold">Regions</span>
                 <ul
-                  className={clx(
-                    "grid grid-cols-1 gap-2 text-ui-fg-subtle txt-small",
-                    {
-                      "grid-cols-2": (productCollections?.length || 0) > 3,
-                    }
-                  )}
+                  className={clx("grid grid-cols-1 gap-2 text-neutral-800 ", {
+                    "grid-cols-2": (productCollections?.length || 0) > 3,
+                  })}
                 >
                   {productCollections?.slice(0, 6).map((c) => (
                     <li key={c.id}>
                       <Link
-                        className="hover:text-ui-fg-base"
+                        className="hover:text-chablis hover:text-base"
                         href={`/collections/${c.handle}`}
                       >
                         {c.title}
@@ -136,7 +136,7 @@ export default async function Footer() {
             )}
           </div>
         </div>
-        <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
+        <div className="flex w-full mb-16 justify-between text-neutral-800">
           <Text className="txt-compact-small">
             ©{new Date().getFullYear()} Trove Limited. Designed in Hong Kong.
           </Text>

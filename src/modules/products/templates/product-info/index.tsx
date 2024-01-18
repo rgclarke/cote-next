@@ -14,16 +14,16 @@ const ProductInfo: React.FC<ProductInfoProps> = ({ product }) => {
         {product.collection && (
           <Link
             href={`/collections/${product.collection.handle}`}
-            className="text-medium text-ui-fg-muted hover:text-ui-fg-subtle"
+            className="text-medium text-neutral-800 hover:text-neutral-800"
           >
             {product.collection.title}
           </Link>
         )}
-        <Heading level="h2" className="text-3xl leading-10 text-ui-fg-base">
+        <Heading level="h2" className="text-3xl leading-10 text-chablis">
           {product.title}
         </Heading>
 
-        <Text className="text-medium text-ui-fg-subtle">
+        <Text className="text-medium text-neutral-800">
           {product.description}
         </Text>
       </div>

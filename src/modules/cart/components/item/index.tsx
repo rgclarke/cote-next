@@ -60,7 +60,9 @@ const Item = ({ item, region, type = "full" }: ItemProps) => {
       </Table.Cell>
 
       <Table.Cell className="text-left">
-        <Text className="txt-medium-plus text-ui-fg-base">{item.title}</Text>
+        <Text className="txt-medium-plus text-neutral-800 font-semibold">
+          {item.title}
+        </Text>
         <LineItemOptions variant={item.variant} />
       </Table.Cell>
 
@@ -109,7 +111,7 @@ const Item = ({ item, region, type = "full" }: ItemProps) => {
         >
           {type === "preview" && (
             <span className="flex gap-x-1 ">
-              <Text className="text-ui-fg-muted">{item.quantity}x </Text>
+              <Text className="text-neutral-800">{item.quantity}x </Text>
               <LineItemUnitPrice item={item} region={region} style="tight" />
             </span>
           )}

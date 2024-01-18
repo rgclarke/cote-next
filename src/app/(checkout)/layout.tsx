@@ -14,16 +14,16 @@ export default function CheckoutLayout({
         <nav className="flex h-full items-center content-container justify-between">
           <Link
             href="/cart"
-            className="group text-small-semi text-ui-fg-base flex items-center gap-x-2 uppercase flex-1 basis-0"
+            className="group text-small-semi text-chablis flex items-center gap-x-2 uppercase flex-1 basis-0"
           >
             <ChevronDown
               className="group-hover:text-chablis rotate-90"
               size={16}
             />
-            <span className="mt-px hidden small:block txt-compact-plus text-ui-fg-subtle group-hover:text-chablis">
+            <span className="mt-px hidden small:block txt-compact-plus text-neutral-800 group-hover:text-chablis">
               Back to shopping cart
             </span>
-            <span className="mt-px block small:hidden txt-compact-plus text-ui-fg-subtle hover:text-chablis">
+            <span className="mt-px block small:hidden txt-compact-plus text-neutral-800 hover:text-chablis">
               Back
             </span>
           </Link>
@@ -31,7 +31,7 @@ export default function CheckoutLayout({
           <div className="flex items-center h-full">
             <Link
               href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base"
+              className="txt-compact-xlarge-plus hover:text-chablis"
             >
               <Image
                 src="/svg/code-de-chine-wordmark-black.svg"
@@ -44,7 +44,7 @@ export default function CheckoutLayout({
 
           {/* <Link
             href="/"
-            className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base"
+            className="txt-compact-xlarge-plus text-neutral-800 hover:text-chablis"
           >
             Côte de Chine
           </Link> */}

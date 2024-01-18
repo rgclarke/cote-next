@@ -61,7 +61,7 @@ const AddressSelect = ({ addresses, cart }: AddressSelectProps) => {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <Listbox.Options className="absolute z-20 w-full overflow-auto text-small-regular bg-white border border-top-0 max-h-60 focus:outline-none sm:text-sm">
+          <Listbox.Options className="absolute z-20 w-full overflow-auto text-neutral-800 bg-white border border-top-0 max-h-60 focus:outline-none sm:text-sm">
             {addresses.map((address) => {
               return (
                 <Listbox.Option
@@ -76,7 +76,7 @@ const AddressSelect = ({ addresses, cart }: AddressSelectProps) => {
                         {address.first_name} {address.last_name}
                       </span>
                       {address.company && (
-                        <span className="text-small-regular text-ui-fg-base">
+                        <span className="text-neutral-800">
                           {address.company}
                         </span>
                       )}

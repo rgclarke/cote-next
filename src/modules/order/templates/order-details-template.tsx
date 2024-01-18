@@ -24,7 +24,7 @@ const OrderDetailsTemplate: React.FC<OrderDetailsTemplateProps> = ({
         <h1 className="text-2xl-semi">Order details</h1>
         <Link
           href="/account/orders"
-          className="flex gap-2 items-center text-ui-fg-subtle hover:text-ui-fg-base"
+          className="flex gap-2 items-center text-neutral-800 hover:text-chablis"
         >
           <XMark /> Back to overview
         </Link>

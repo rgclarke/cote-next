@@ -26,7 +26,7 @@ export default function OrderCompletedTemplate({
         <div className="flex flex-col gap-4 max-w-4xl h-full bg-white w-full py-10">
           <Heading
             level="h1"
-            className="flex flex-col gap-y-3 text-ui-fg-base text-3xl mb-4"
+            className="flex flex-col gap-y-3 text-chablis text-3xl mb-4"
           >
             <span>Thank you!</span>
             <span>Your order was placed successfully.</span>
