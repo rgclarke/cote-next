@@ -61,14 +61,24 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
           </div>
         </div>
       </div>
-      {product.tags?.length ? (
-        <div>
-          <span className="font-semibold">Tags</span>
-        </div>
-      ) : null}
+      {/* Tags Here */}
     </div>
   )
 }
+// {product.tags?.length ? (
+//   <div>
+//     <span className="font-semibold">Tags</span>
+//     <p>{product.type ? product.type.value : ""}</p>
+//     {product.tags.map((tag, i) => (
+//       <span
+//         className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+//         key={i}
+//       >
+//         {tag.component}
+//       </span>
+//     ))}
+//   </div>
+// ) : null}
 
 const ShippingInfoTab = () => {
   return (
@@ -77,9 +87,9 @@ const ShippingInfoTab = () => {
         <div className="flex items-start gap-x-2">
           <FastDelivery />
           <div>
-            <span className="font-semibold">Fast delivery</span>
+            <span className="font-semibold">Delivery</span>
             <p className="max-w-sm">
-              Standard shipping in Hong Kong within 3 business days. See
+              Standard shipping in Hong Kong within 2 business days. See
               checkout for express and other options. Free delivery with minimum
               order. Or you can pick up your order from our warehouse at any
               time during business hours.
