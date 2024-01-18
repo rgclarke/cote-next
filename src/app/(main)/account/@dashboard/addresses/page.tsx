@@ -7,7 +7,7 @@ import { notFound } from "next/navigation"
 import { getRegion } from "app/actions"
 
 export const metadata: Metadata = {
-  title: "Addresses",
+  title: "Addresses | Côte de Chine",
   description: "View your addresses",
 }
 

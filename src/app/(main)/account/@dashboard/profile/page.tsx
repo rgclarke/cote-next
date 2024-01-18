@@ -10,7 +10,7 @@ import { getCustomer, listRegions } from "@lib/data"
 import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
-  title: "Profile",
+  title: "Profile | Côte de Chine",
   description: "View and edit your Medusa Store profile.",
 }
 

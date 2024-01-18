@@ -5,7 +5,7 @@ import Overview from "@modules/account/components/overview"
 import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
-  title: "Account",
+  title: "Account | Côte de Chine",
   description: "Overview of your account activity.",
 }
 

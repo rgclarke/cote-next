@@ -5,7 +5,7 @@ import { listCustomerOrders } from "@lib/data"
 import { notFound } from "next/navigation"
 
 export const metadata: Metadata = {
-  title: "Orders",
+  title: "Orders | Côte de Chine",
   description: "Overview of your previous orders.",
 }
 

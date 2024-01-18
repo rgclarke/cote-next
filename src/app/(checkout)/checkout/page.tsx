@@ -9,7 +9,7 @@ import CheckoutForm from "@modules/checkout/templates/checkout-form"
 import CheckoutSummary from "@modules/checkout/templates/checkout-summary"
 
 export const metadata: Metadata = {
-  title: "Checkout",
+  title: "Checkout | Côte de Chine",
 }
 
 const fetchCart = async () => {

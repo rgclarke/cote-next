@@ -28,7 +28,7 @@ async function getOrder(id: string) {
 }
 
 export const metadata: Metadata = {
-  title: "Order Confirmed",
+  title: "Order Confirmed | Côte de Chine",
   description: "You purchase was successful",
 }
 

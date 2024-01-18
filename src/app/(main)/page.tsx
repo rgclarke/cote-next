@@ -6,9 +6,9 @@ import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
 
 export const metadata: Metadata = {
-  title: "Cote de Chine",
+  title: "Côte de Chine | Fine European and New World wines | Hong Kong",
   description:
-    "Fine Wines in Hong Kong",
+    "Fine European and New World wines | Hong Kong",
 }
 
 const getCollectionsWithProducts = async () => {

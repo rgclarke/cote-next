@@ -9,7 +9,7 @@ import { CartWithCheckoutStep } from "types/global"
 import { getCustomer } from "@lib/data"
 
 export const metadata: Metadata = {
-  title: "Cart",
+  title: "Cart | Côte de Chine",
   description: "View your cart",
 }
 

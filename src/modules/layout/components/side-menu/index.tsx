@@ -101,7 +101,7 @@ const SideMenu = ({
                       </ul>
                     </div>
                     <div className="flex flex-col gap-y-6">
-                      <div
+                      {/* <div
                         className="flex justify-between"
                         onMouseEnter={toggleState.open}
                         onMouseLeave={toggleState.close}
@@ -119,7 +119,7 @@ const SideMenu = ({
                             toggleState.state ? "-rotate-90" : ""
                           )}
                         />
-                      </div>
+                      </div> */}
                       <Text className="flex justify-between txt-compact-small">
                         ©{new Date().getFullYear()} Trove Limited
                       </Text>
