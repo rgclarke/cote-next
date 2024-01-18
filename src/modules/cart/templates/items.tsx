@@ -11,25 +11,29 @@ type ItemsTemplateProps = {
 
 const ItemsTemplate = ({ items, region }: ItemsTemplateProps) => {
   return (
-    <div>
-      <div className="pb-3 flex items-center">
+    <div className="text-neutral-800 bg-white hover:bg-white">
+      <div className="pb-3 flex items-center ">
         <Heading className="text-[2rem] leading-[2.75rem]">Cart</Heading>
       </div>
-      <Table>
-        <Table.Header className="border-t-0">
-          <Table.Row className="text-neutral-800 txt-medium-plus">
-            <Table.HeaderCell className="!pl-0">Item</Table.HeaderCell>
-            <Table.HeaderCell></Table.HeaderCell>
-            <Table.HeaderCell>Quantity</Table.HeaderCell>
-            <Table.HeaderCell className="hidden small:table-cell">
+      <Table className="bg-white hover:bg-white">
+        <Table.Header className="border-t-0 bg-white hover:bg-white">
+          <Table.Row className="text-neutral-800 txt-medium-plus bg-white hover:bg-white">
+            <Table.HeaderCell className="!pl-0 bg-white hover:bg-white">
+              Item
+            </Table.HeaderCell>
+            <Table.HeaderCell className="bg-white hover:bg-white"></Table.HeaderCell>
+            <Table.HeaderCell className="bg-white hover:bg-white">
+              Quantity
+            </Table.HeaderCell>
+            <Table.HeaderCell className="hidden small:table-cell bg-white hover:bg-white">
               Price
             </Table.HeaderCell>
-            <Table.HeaderCell className="!pr-0 text-right">
+            <Table.HeaderCell className="!pr-0 text-right bg-white hover:bg-white">
               Total
             </Table.HeaderCell>
           </Table.Row>
         </Table.Header>
-        <Table.Body>
+        <Table.Body className="bg-white hover:bg-white">
           {items && region
             ? items
                 .sort((a, b) => {

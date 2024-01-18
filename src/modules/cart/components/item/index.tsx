@@ -46,7 +46,7 @@ const Item = ({ item, region, type = "full" }: ItemProps) => {
   }
 
   return (
-    <Table.Row className="w-full">
+    <Table.Row className="w-full bg-white hover:bg-white">
       <Table.Cell className="!pl-0 p-4 w-24">
         <Link
           href={`/products/${handle}`}
