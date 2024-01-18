@@ -1,6 +1,7 @@
 const path = require("path")
 
 module.exports = {
+  darkMode: "class",
   presets: [require("@medusajs/ui-preset")],
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx}",
@@ -25,11 +26,11 @@ module.exports = {
         "cerulean-medium": "#C2C6C8",
         "cerulean-dark": "#384B54",
         chablis: "#72cc5e",
-        chianti: '#D13636',
-				kelin: '#A4CA8F', // #78D64B matched for 7488C, #5ACE5A for 7488U
-        'kelin-light': '#f1f7ed',
-        'kelin-medium': '#C2D6B8',
-        'kelin-dark': '#6e8a62',
+        chianti: "#D13636",
+        kelin: "#A4CA8F", // #78D64B matched for 7488C, #5ACE5A for 7488U
+        "kelin-light": "#f1f7ed",
+        "kelin-medium": "#C2D6B8",
+        "kelin-dark": "#6e8a62",
         grey: {
           0: "#FFFFFF",
           5: "#F9FAFB",
