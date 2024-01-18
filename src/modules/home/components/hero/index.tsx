@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="mx-auto grid w-full justify-center py-4">
           <Link
             href="/search"
-            className="w-64 rounded-full border border-neutral-300 bg-white px-4 py-1 text-left text-sm ring-transparent ring-offset-2 hover:border-transparent hover:ring-2 hover:ring-chablis dark:border-neutral-500 dark:bg-neutral-900 dark:hover:border-transparent dark:hover:ring-chablis"
+            className="w-64 rounded-full border border-neutral-300 bg-white px-4 py-1 text-left text-sm ring-transparent ring-offset-2 hover:border-transparent hover:ring-2 hover:ring-chablis"
             aria-label="Search"
             scroll={false}
           >
@@ -42,7 +42,7 @@ const Hero = () => {
             Fine European & New World Wines
           </Heading>
           <a href="/store">
-            <button className="mt-24 sm:mt-4 inline-block mr-4 rounded-full border border-white px-3 py-1.5 text-white text-lg hover:border-chablis dark:hover:border-chablis hover:bg-chablis hover:text-white dark:border-white dark:hover:bg-chablis">
+            <button className="mt-24 sm:mt-4 inline-block mr-4 rounded-full border border-white px-3 py-1.5 text-white text-lg hover:border-chablis hover:bg-chablis hover:text-white">
               Explore our Wines
             </button>
           </a>
