@@ -20,7 +20,7 @@ const StoreTemplate = ({
       <RefinementList sortBy={sortBy || "created_at"} />
       <div className="w-full">
         <div className="mb-8 text-2xl-semi">
-          <h1>All products</h1>
+          <h1>All Wine</h1>
         </div>
         <Suspense fallback={<SkeletonProductGrid />}>
           <PaginatedProducts

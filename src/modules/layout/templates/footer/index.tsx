@@ -22,10 +22,10 @@ export default async function Footer() {
     (categories) => categories
   )
   return (
-    <footer className="border-t border-ui-border-base w-full bg-neutral-200">
+    <footer className="w-full bg-neutral-200">
       <div className="content-container flex flex-col w-full">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
-          <div>
+        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-24">
+          <div className="mb-12 sm:mb-0">
             <Link
               href="/"
               className="txt-compact-xlarge-plus hover:text-ui-fg-base"
@@ -43,6 +43,21 @@ export default async function Footer() {
             >
               Cote de Chine
             </Link> */}
+            <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
+              <div className="flex flex-col gap-y-2">
+                <span className="mt-2 mb-6 txt-small-plus txt-ui-fg-base">
+                  Fine European & New World Wines
+                </span>
+                <ul className="grid grid-cols-1 gap-2 text-ui-fg-subtle txt-small hover:text-ui-fg-base">
+                  <li>About Côte</li>
+                  <li>Contact Us</li>
+                  <li>Delivery & Pick-up</li>
+                  <li>Legal</li>
+                  <li>Privacy Policy</li>
+                  {/* <li>FAQ</li> */}
+                </ul>
+              </div>
+            </div>
           </div>
           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
             {productCategories && productCategories?.length > 0 && (
@@ -69,10 +84,7 @@ export default async function Footer() {
                         key={c.id}
                       >
                         <Link
-                          className={clx(
-                            "hover:text-ui-fg-base",
-                            children && "txt-small-plus"
-                          )}
+                          className={clx(" ", children && "txt-small-plus")}
                           href={`/categories/${c.handle}`}
                         >
                           {c.name}

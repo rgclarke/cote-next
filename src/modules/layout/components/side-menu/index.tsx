@@ -11,11 +11,13 @@ import { Fragment } from "react"
 
 import CountrySelect from "../country-select"
 const SideMenuItems = {
-  Home: "/",
   Store: "/store",
   Search: "/search",
-  Account: "/account",
-  Cart: "/cart",
+  Contact: "/contact",
+  "Delivery & Pick-up": "/delivery",
+  "About Côte": "/company",
+  Legal: "/legal",
+  FAQ: "/faq",
 }
 
 const SideMenu = ({

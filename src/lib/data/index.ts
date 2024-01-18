@@ -514,7 +514,7 @@ export async function getHomepageProducts({
 }) {
   const collectionProductsMap = new Map<string, PricedProduct[]>()
 
-  const { collections } = await getCollectionsList(0, 3)
+  const { collections } = await getCollectionsList(0, 7)
 
   if (!collectionHandles) {
     collectionHandles = collections.map((collection) => collection.handle)

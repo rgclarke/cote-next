@@ -13,7 +13,7 @@ const Hero = () => {
           alt="A vinyard with hills in the background in the sunshine"
         />
       </div>
-      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
+      <div className="absolute inset-0 z-10 flex flex-col justify-start items-center text-center sm:p-12 gap-6">
         {/* Search Bar */}
         <div className="mx-auto grid w-full justify-center py-4">
           <Link
@@ -28,7 +28,7 @@ const Hero = () => {
             </div>
           </Link>
         </div>
-        <span>
+        <div className="sm:pt-36">
           <Heading
             level="h1"
             className="px-8 text-5xl leading-10 font-serif text-white"
@@ -39,14 +39,14 @@ const Hero = () => {
             level="h2"
             className="px-8 text-xl leading-10 font-normal text-white"
           >
-            Fine Wines in Hong Kong
+            Fine European & New World Wines
           </Heading>
-        </span>
-        <a href="/store">
-          <button className="mt-4 inline-block mr-4 rounded-full border border-white px-3 py-1.5 text-white text-lg hover:border-chablis dark:hover:border-chablis hover:bg-chablis hover:text-white dark:border-white dark:hover:bg-chablis">
-            Explore our Wines
-          </button>
-        </a>
+          <a href="/store">
+            <button className="mt-24 sm:mt-4 inline-block mr-4 rounded-full border border-white px-3 py-1.5 text-white text-lg hover:border-chablis dark:hover:border-chablis hover:bg-chablis hover:text-white dark:border-white dark:hover:bg-chablis">
+              Explore our Wines
+            </button>
+          </a>
+        </div>
       </div>
     </div>
     // <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
